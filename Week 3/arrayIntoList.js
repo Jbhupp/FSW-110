@@ -11,18 +11,22 @@ for (let i = 0; i < 10; i ++) {
     
 }
 
-var note = document.querySelector('H1');
-note.style.backgroundColor = 'yellow';
-note.style.color = 'red';
-
+for (let i = 0; i < 10; i ++){
+    var note = document.querySelector('H1');
+    note.style.backgroundColor = 'blue';
+    note.style.color = 'red';
+    document.body.appendChild(note)
+}
 
 var names1 = ['steve', 'larry', 'joe', 'shirley', 'steph', 'nate', 'rick', 'emily']
 
 var people = document.getElementById("newList")
 
 for (var i = 0; i < names1.length; i ++) {
-
-    var newList = document.createElement("li")
-    newList.textContent = names1[i]
-    people.append(newList)
+    people.innerHTML += "<li>" + names1[i] + "</li>"
+    
 }
+
+var h1Elements = document.getElementsByTagName("h1");
+
+
