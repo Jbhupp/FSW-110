@@ -4,14 +4,14 @@ function handleLoad(){
     square.style.backgroundColor ="black";
 }
 
-square.addEventListener("load", handleLoad)
+square.addEventListener("DOMContentLoaded", handleLoad)
 
 
 function handleStart(){
     square.style.backgroundColor ="white";
 }
 
-square.addEventListener("mouseover", handleStart)
+square.addEventListener("start", handleStart)
 
 
 function handleMouseOver(){
