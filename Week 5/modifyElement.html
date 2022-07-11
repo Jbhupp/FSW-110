@@ -6,15 +6,17 @@
 
     <body>
 
+        <form action="" id="my_form">
+            <label>First name</label><br>
+            <input type="text" id="first_name" name="first_name" /><br>
+            <label>Last name</label><br>
+            <input type="text" id="last_name" name="last_name" /><br>
+            <label>Email Address:</label><br>
+            <input type="email" id="email_address" name="email_address"/>
 
-        <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="Jenni"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Hupp"><br><br>
-            <label for="dob">Date of Birth:</label><br>
-            <input type="number" id="dob" age="dob" value="42"><br><br>
-            <input type="submit" value="Submit">
+            <input type="button" value="Submit" onclick= "Save()"/>
+                                
+
           </form> 
           
         <script src="modifyElement.js">
