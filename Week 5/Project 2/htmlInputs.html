@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles2.css">
+    </head>
+
+    <body>
+
+        <fieldset>
+
+            <legend>Please fill out our questionnaire.</legend>
+
+        <form action="my_form">
+            
+            First Name: <input type="text" id="first_name" name="first_name"/><br><br>
+            
+            Last Name: <input type="text" id="last_name" name="last_name"/><br><br>
+            
+            Age: <input type="number" id="age" age="age"/><br><br>
+            
+
+        </form>     
+                      
+            <form name="myForm">
+                <label> Have you shopped here before?</label><br><br>
+                Yes: <input id="y1" type="radio"  name="decision" value="Yes"/><br><br>
+                No: <input id="n1" type="radio" name="decision" value="No"/><br><br>
+                
+            </form>
+            
+           
+
+            <label for="question2">How likely are you to recommend us to a friend?</label><br><br>
+                Highly Likely: <input id="hl" type="radio"  name="decision1" value="Highly Likely"/><br><br>
+                Somewhat Likely: <input id="sl" type="radio"  name="decision1" value="Somehwat Likely"/><br><br>
+                Not Likely: <input id="nl" type="radio"  name="decision1" value="Not Likely"/><br><br>
+
+            <form id="question3">
+            <label for="question3">Which brands do you prefer?</label><br><br>
+                Nike: <input type="checkbox"  id="one" name="decision" class="brands" value="Nike"/> <br><br>
+                Adidas: <input type="checkbox" id="two" name="decision" class="brands" value="Adidas"/> <br><br>
+                Under Armour: <input type="checkbox" id="three"  name="decision" class="brands" value="Under Armour"/><br><br>
+                Reebok: <input type="checkbox" id="four" name="decision" class="brands" value="Reebok"/><br><br>
+                Converse: <input type="checkbox" id="five" name="decision" class="brands" value="Converse"/><br><br>
+
+                
+            </form> 
+            <input id="btn" type="button" value="Submit" onclick="Save()"/>
+           
+          
+
+        
+          
+        <script src="htmlInputs.js">
+
+        </script>
+
+</fieldset>
+
+    </body>
+
+
+
+
+</html>
