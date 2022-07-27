@@ -22,32 +22,13 @@ function orderButton() {
 }
 
 
-let form = document.getElementById('form');
-let ul = document.getElementById('customer');
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    let parentList = document.createElement('li');
-    parentList.className = 'parentList';
-    let subList = document.createElement('ul');
-    let nestedList1 = document.createElement('li');
+function customer(){
+    let form3 = document.getElementById('form3')
+    const name = document.getElementById("item");
+    const lastName = document.getElementById("item");
+    const number = document.getElementById("item");
+    const customerInfo = form3 + name + lastName + number;
 
-    parentList.textContent = item.value;
-    subList.textContent = details.value;
-
-    let deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
-    deleteBtn.addEventListener('click', (e) => {
-        let removeBtn = e.target;
-        removeBtn.parentNode.parentNode.parentNode.remove();
-    });
-
-    ul.appendChild(parentList);
-    parentList.appendChild(subList);
-    subList.appendChild(nestedList1);
-    nestedList1.appendChild(deleteBtn);
-
-    item.value = "";
-    details.value = "";
-
-});
+    document.getElementById("order")=customerInfo;
+}
