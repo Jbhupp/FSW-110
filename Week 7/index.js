@@ -22,13 +22,36 @@ function orderButton() {
 }
 
 
+let item = document.getElementById('first');
+let details = document.getElementById('last');
+let info = document.getElementById('cell');
 
-function customer(){
-    let form3 = document.getElementById('form3')
-    const name = document.getElementById("item");
-    const lastName = document.getElementById("item");
-    const number = document.getElementById("item");
-    const customerInfo = form3 + name + lastName + number;
+let form = document.getElementById('form');
+let ul = document.getElementById('customerInfo');
 
-    document.getElementById("order")=customerInfo;
-}
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    let parentList = document.createElement('li');
+    parentList.className = 'parentList';
+    let subList = document.createElement('ul');
+    let nestedList1 = document.createElement('li');
+
+    parentList.textContent = item.value;
+    subList.textContent = details.value;
+
+    let deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.addEventListener('click', (e) => {
+        let removeBtn = e.target;
+        removeBtn.parentNode.parentNode.parentNode.remove();
+    });
+
+    ul.appendChild(parentList);
+    parentList.appendChild(subList);
+    subList.appendChild(nestedList1);
+    nestedList1.appendChild(deleteBtn);
+
+    item.value = "";
+    details.value = "";
+
+});
