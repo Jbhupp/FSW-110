@@ -43,11 +43,13 @@ main{
 }
 
 #form{
-    border: 5px solid black;
+    border: 2px solid black;
     grid-area: form;
+    line-height: 20px;
 }
 #title{
     text-align: center;
+    line-height: 20px;
 }
 ul{
     text-align: center;
@@ -136,8 +138,13 @@ footer{
         grid-area: form;
         width: auto;
         height: auto;
+        line-height: 10px;
         
-        
+    }
+    .btn{
+        font-size: 5px;
+        padding-left: 0%;
+        padding-right: 0%;
     }
     #title{
         text-align: center;
@@ -145,7 +152,7 @@ footer{
     ul{
         text-align: center;
         list-style: none;
-        line-height: 60px;
+        line-height: 30px;
         margin: 0;
         padding-left: 0%;
         padding-right: 0%;
@@ -191,6 +198,10 @@ footer{
         flex-direction: column;
         align-items:center;
         width: 100%;
+        font-size: 12px;
+        padding-left: 0%;
+        padding-right: 0%;
+
         
     }
 }

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Beginner:wght@600&family=Kaushan+Script&family=Lobster&display=swap');
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1.2fr 1.5fr 1.5fr 1.5fr .6fr;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "mainimg mainimg mainimg mainimg mainimg"
+    "main main main main main"
+    "form form form2 form2 form3 "
+    "form form form2 form2 form3"
+    "footer footer footer footer footer";
+    height: 100vh;
+    gap: .5rem;
+
+}
+nav{
+    background-color: wheat;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+main{
+    
+    grid-area: main;
+    font-size: 60px;
+    font-family:'Lobster', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#mainimg{
+    display: grid;
+    grid-area: mainimg;
+    background-size: cover;
+    image-resolution: inherit;  
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    display: block;
+ 
+}
+
+#form2{
+    border: 5px solid black;
+    grid-area: form;
+    
+}
+#form3{
+    border: 5px solid black;
+    grid-area: form3;
+  
+}
+#welcomeimg{
+    height: 150px;
+}
+
+#title{
+    text-align: center;
+}
+ul{
+    text-align: center;
+    list-style: none;
+    line-height: 60px;
+}
+#coffee{
+    height: 20px;
+    width: 20px;
+}
+#icedcoffee{
+    height: 40px;
+    width: 40px;
+}
+#espresso{
+    height: 40px;
+    width: 40px;
+}
+#cappuccino{
+    height: 40px;
+    width: 40px;
+}
+#form{
+    border: 5px solid black;
+    grid-area: form2;
+   display: grid;
+   text-align:justify;
+   line-height: 10px;
+ 
+}
+#item{
+    width: 50%;
+}
+.btn{
+    display: grid;
+    width: 100%;
+
+}
+
+footer{
+    background-color: wheat;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+
+@media only screen and (max-width:400px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        grid-template-areas: 
+        "nav"
+        "mainimg"
+        "main"
+        "form3"
+        "form"
+        
+        
+        "form2"
+        "footer";
+        height: 100vh;
+        gap: .5rem;
+    }
+        nav{
+            background-color: wheat;
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        main{
+            
+            grid-area: main;
+            font-size: 30px;
+            font-family:'Lobster', cursive;
+            text-align: center;
+            display: grid;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            height: 50px;
+        }
+        #mainimg{
+            display: grid;
+            grid-area: mainimg;
+            background-size: cover;
+            image-resolution: inherit;  
+            width: 90%;
+            height: 100px;
+            margin: auto;
+            
+         
+        }
+        
+        #form2{
+            border: 5px solid black;
+            grid-area: form2;
+            line-height: 5px;
+            font-size: 10px;
+            
+        }
+        #form3{
+            border: 5px solid black;
+            grid-area: form3;
+            
+            font-size: 10px;
+            margin: 0px;
+          
+        }
+        #welcomeimg{
+            height: 50px;
+        }
+        
+        #title{
+            text-align: center;
+            margin: 0px;
+        }
+        ul{
+            text-align: center;
+            list-style: none;
+            line-height: 60px;
+        }
+        #coffee{
+            height: 20px;
+            width: 20px;
+        }
+        #icedcoffee{
+            height: 30px;
+            width: 40px;
+        }
+        #espresso{
+            height: 30px;
+            width: 40px;
+        }
+        #cappuccino{
+            height: 30px;
+            width: 40px;
+        }
+        #form{
+            border: 5px solid black;
+            grid-area: form;
+           display: grid;
+           text-align:justify;
+           line-height: 5px;
+           font-size: 10px;
+           height: 200px;
+         
+        }
+        #item{
+            width: 50%;
+        }
+        .btn{
+            display: grid;
+            width: 100%;
+        
+        }
+        
+        footer{
+            background-color: wheat;
+            grid-area: footer;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            
+        }
+    
+    }
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: .2fr 1.2fr 1.5fr 1.5fr 1.5fr 1.5fr .6fr;
+        grid-template-areas: 
+        "nav nav nav nav nav"
+        "mainimg mainimg mainimg mainimg mainimg"
+        "main main main main main"
+        "form2 form2 form2 form2 form2 "
+        "form form form form form"
+        "form3 form3 form3 form3 form3"
+        "footer footer footer footer footer";
+        height: 100vh;
+        gap: .5rem;
+    
+    }
+    nav{
+        background-color: wheat;
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    main{
+        
+        grid-area: main;
+        font-size: 40px;
+        font-family:'Lobster', cursive;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #mainimg{
+        display: grid;
+        grid-area: mainimg;
+        background-size: cover;
+        image-resolution: inherit;  
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        display: block;
+     
+    }
+    
+    #form2{
+        border: 5px solid black;
+        grid-area: form;
+        
+    }
+    #form3{
+        border: 5px solid black;
+        grid-area: form3;
+      
+    }
+    #welcomeimg{
+        height: 75px;
+    }
+    
+    #title{
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+        list-style: none;
+        line-height: 60px;
+    }
+    #coffee{
+        height: 20px;
+        width: 20px;
+    }
+    #icedcoffee{
+        height: 40px;
+        width: 40px;
+    }
+    #espresso{
+        height: 40px;
+        width: 40px;
+    }
+    #cappuccino{
+        height: 40px;
+        width: 40px;
+    }
+    #form{
+        border: 5px solid black;
+        grid-area: form2;
+       display: grid;
+       text-align:justify;
+       line-height: 10px;
+     
+    }
+    #item{
+        width: 50%;
+    }
+    .btn{
+        display: grid;
+        width: 100%;
+    
+    }
+    
+    footer{
+        background-color: wheat;
+        grid-area: footer;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        
+    }
+}
+    
