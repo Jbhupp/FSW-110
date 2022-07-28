@@ -114,8 +114,6 @@ footer{
         "main"
         "form3"
         "form"
-        
-        
         "form2"
         "footer";
         height: 100vh;
@@ -191,7 +189,7 @@ footer{
             width: 40px;
         }
         #form{
-            border: 5px solid black;
+            border: 3px solid black;
             grid-area: form;
            display: grid;
            text-align:justify;
@@ -271,13 +269,11 @@ footer{
         grid-area: form;
         
     }
-    #form3{
-        border: 5px solid black;
-        grid-area: form3;
-      
-    }
+    
     #welcomeimg{
         height: 75px;
+        display: flex;
+        justify-content: center;
     }
     
     #title{

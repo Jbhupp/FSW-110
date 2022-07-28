@@ -22,12 +22,13 @@ function orderButton() {
 }
 
 
-let item = document.getElementById('first');
-let details = document.getElementById('last');
-let info = document.getElementById('cell');
+let itemOne = document.getElementById('item1');
+let itemTwo = document.getElementById('item2');
+let itemThree = document.getElementById('item3');
+let itemFour = document.getElementById('item4');
 
-let form = document.getElementById('form');
-let ul = document.getElementById('customerInfo');
+let form = document.getElementById('form2');
+let ul = document.getElementById('order-button');
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -36,7 +37,16 @@ form.addEventListener('submit', function(e) {
     let subList = document.createElement('ul');
     let nestedList1 = document.createElement('li');
 
-    parentList.textContent = item.value;
+    parentList.textContent = itemOne.value;
+    subList.textContent = details.value;
+
+    parentList.textContent = itemTwo.value;
+    subList.textContent = details.value;
+
+    parentList.textContent = itemThree.value;
+    subList.textContent = details.value;
+
+    parentList.textContent = itemFour.value;
     subList.textContent = details.value;
 
     let deleteBtn = document.createElement('button');
@@ -51,7 +61,15 @@ form.addEventListener('submit', function(e) {
     subList.appendChild(nestedList1);
     nestedList1.appendChild(deleteBtn);
 
-    item.value = "";
+    itemOne.value = "";
     details.value = "";
 
+    itemTwo.value = "";
+    details.value = "";
+
+    itemThree.value = "";
+    details.value = "";
+
+    itemFour.value = "";
+    details.value = "";
 });
