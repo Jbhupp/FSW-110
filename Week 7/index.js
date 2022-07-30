@@ -1,75 +1,55 @@
-function orderButton() {
+/*function orderButton() {
     const coffee = document.getElementById("q1").value;
     const icedCoffee = document.getElementById("q2").value;
     const cappuccino = document.getElementById("q3").value;
-    const espresso = document.getElementById("q4").value;
+   
 
     const coffeePrice = document.querySelector(".coffee-price").textContent;
     const icedPrice = document.querySelector(".iced-price").textContent;
-    const espressoPrice = document.querySelector(".espresso-price").textContent;
+    
     const cappuccinoPrice = document.querySelector(".cappuccino-price").textContent;
 
 
     const coffeeTotal = coffeePrice * coffee;
     const icedTotal = icedPrice * icedCoffee;
     const cappuccinoTotal = cappuccinoPrice *  cappuccino;
-    const espressoTotal = espressoPrice * espresso;
+    
 
-    const totalPrice = coffeeTotal + icedTotal + espressoTotal + cappuccinoTotal;
+    const totalPrice = coffeeTotal + icedTotal + cappuccinoTotal;
 
     document.getElementById("order-button").value = totalPrice;
+} */
+
+function orderButton() {
+
    
-}
+
+    const coffee = document.getElementById("q1").value;
+    const icedCoffee = document.getElementById("q2").value;
+    const cappuccino = document.getElementById("q3").value;
+   
+
+    const coffeePrice = document.querySelector(".coffee-price").textContent;
+    const icedPrice = document.querySelector(".iced-price").textContent;
+    
+    const cappuccinoPrice = document.querySelector(".cappuccino-price").textContent;
 
 
-let itemOne = document.getElementById('item1');
-let itemTwo = document.getElementById('item2');
-let itemThree = document.getElementById('item3');
-let itemFour = document.getElementById('item4');
+    const coffeeTotal = coffeePrice * coffee;
+    const icedTotal = icedPrice * icedCoffee;
+    const cappuccinoTotal = cappuccinoPrice *  cappuccino;
+    
 
-let form = document.getElementById('form2');
-let ul = document.getElementById('order-button');
+    const totalPrice = coffeeTotal + icedTotal + cappuccinoTotal;
 
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    let parentList = document.createElement('li');
-    parentList.className = 'parentList';
-    let subList = document.createElement('ul');
-    let nestedList1 = document.createElement('li');
+    document.getElementById("order-button").value = totalPrice;
 
-    parentList.textContent = itemOne.value;
-    subList.textContent = details.value;
+    document.getElementById("receipt-temp").value =  coffee + " coffee";
+    document.getElementById("receipt-temp").value =  coffee + " Iced coffee";
+    document.getElementById("receipt-temp").value =  coffee + " Cappucino";
 
-    parentList.textContent = itemTwo.value;
-    subList.textContent = details.value;
-
-    parentList.textContent = itemThree.value;
-    subList.textContent = details.value;
-
-    parentList.textContent = itemFour.value;
-    subList.textContent = details.value;
-
-    let deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
-    deleteBtn.addEventListener('click', (e) => {
-        let removeBtn = e.target;
-        removeBtn.parentNode.parentNode.parentNode.remove();
-    });
-
-    ul.appendChild(parentList);
-    parentList.appendChild(subList);
-    subList.appendChild(nestedList1);
-    nestedList1.appendChild(deleteBtn);
-
-    itemOne.value = "";
-    details.value = "";
-
-    itemTwo.value = "";
-    details.value = "";
-
-    itemThree.value = "";
-    details.value = "";
-
-    itemFour.value = "";
-    details.value = "";
-});
+    var totalReceipt = totalPrice;
+    document.getElementById("receipt-temp").value = ("$") + totalReceipt;
+} 
+    
+    

@@ -14,6 +14,12 @@
     gap: .5rem;
 
 }
+
+body{
+    margin: 0;
+}    
+
+
 nav{
     background-color: wheat;
     grid-area: nav;
@@ -44,7 +50,7 @@ main{
 }
 
 #form2{
-    border: 5px solid black;
+    
     grid-area: form;
     
 }
@@ -61,24 +67,9 @@ ul{
     list-style: none;
     line-height: 60px;
 }
-#coffee{
-    height: 20px;
-    width: 20px;
-}
-#icedcoffee{
-    height: 40px;
-    width: 40px;
-}
-#espresso{
-    height: 40px;
-    width: 40px;
-}
-#cappuccino{
-    height: 40px;
-    width: 40px;
-}
+
 #form{
-    border: 5px solid black;
+    
     grid-area: form2;
    display: grid;
    text-align:justify;
@@ -113,8 +104,8 @@ footer{
         "mainimg"
         "main"
         "form3"
-        "form"
         "form2"
+        "form"
         "footer";
         height: 100vh;
         gap: .5rem;
@@ -123,9 +114,14 @@ footer{
             background-color: wheat;
             grid-area: nav;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             
+        }
+
+        #thanks{
+            font-size: 20px;
+            align-items: center;
         }
         main{
             
@@ -134,7 +130,7 @@ footer{
             font-family:'Lobster', cursive;
             text-align: center;
             display: grid;
-            flex-direction: column;
+            
             padding: 0;
             margin: 0;
             height: 50px;
@@ -154,9 +150,18 @@ footer{
         #form2{
             border: 5px solid black;
             grid-area: form2;
+            justify-content: center;
             line-height: 5px;
             font-size: 10px;
+            width: 75%;
             
+        }
+
+
+        #form3{
+            display: grid;
+            align-items: center;
+            justify-content: center;
         }
        
         #welcomeimg{
@@ -164,6 +169,7 @@ footer{
         }
         
         #title{
+            display: grid;
             text-align: center;
             margin: 0px;
         }
@@ -172,30 +178,14 @@ footer{
             list-style: none;
             line-height: 60px;
         }
-        #coffee{
-            height: 20px;
-            width: 20px;
-        }
-        #icedcoffee{
-            height: 30px;
-            width: 40px;
-        }
-        #espresso{
-            height: 30px;
-            width: 40px;
-        }
-        #cappuccino{
-            height: 30px;
-            width: 40px;
-        }
+       
         #form{
-            border: 3px solid black;
-            grid-area: form;
+           grid-area: form;
            display: grid;
            text-align:justify;
-           line-height: 5px;
+          
            font-size: 10px;
-           height: 200px;
+           width: 75%;
          
         }
         #item{
@@ -227,9 +217,10 @@ footer{
         "nav nav nav nav nav"
         "mainimg mainimg mainimg mainimg mainimg"
         "main main main main main"
-        "form2 form2 form2 form2 form2 "
-        "form form form form form"
         "form3 form3 form3 form3 form3"
+        
+        "form form form form form"
+        "form2 form2 form2 form2 form2 "
         "footer footer footer footer footer";
         height: 100vh;
         gap: .5rem;
@@ -267,6 +258,7 @@ footer{
     #form2{
         border: 5px solid black;
         grid-area: form;
+       
         
     }
     
@@ -274,6 +266,7 @@ footer{
         height: 75px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
     #title{
